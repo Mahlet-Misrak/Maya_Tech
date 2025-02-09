@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>About-Maya - Tech</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}">
+		<noscript></noscript><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}"></noscript>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="{{ url_for('index') }}">Maya Tech</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="{{ url_for('index') }}">Home</a></li>
+								<li><a href="#about">About Us</a></li>
+								<li><a href="#footer">Get in touch</a></li>
+								<li><a href="#footercontact">Contact</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="banner">
+						<header>
+							<div class="inner">
+								<div class="logo"><image src="{{ url_for('static', filename='images/logo.png') }}" class="icon fa-gem"></image></div>
+								<h2>Maya Technology Soliutions</h2>
+								<p>Where Vision meets Creativity</p>
+							</div>
+						</header>
+						</section>
+						<!-- Content -->
+						 <section id="about" >
+							<div class="wrapper">
+								<div class="inner">
+									<h3 class="major">About Us</h3>
+									<p>At Maya Tech, we are committed to empowering businesses with advanced technology solutions. Headquartered in Ethiopia, our mission is to bridge the gap between innovation and local business needs, ensuring every project we undertake meets international quality standards.
+									From creating user-friendly websites to designing impactful graphics and implementing cutting-edge cloud solutions, we deliver results that drive growth and success.</p>
+						
+									<h3 class="major">Covering All Major Ethiopian Industries</h3>
+									<p>At Maya Tech, we take pride in delivering highly scalable and secure website and software development solutions tailored to the unique needs of our clients. With expertise spanning diverse industries—from retail and healthcare to banking, travel, and beyond—we provide cutting-edge services that help businesses thrive in a competitive marketplace.</p>
+									<section class="features">
+										<article>
+											<a href="#" class="image"><img src="{{ url_for('static', filename='images/retail.png') }}" alt="" /></a>
+											<h3 class="major">Retail</h3>
+											<p>Custom e-commerce platforms, inventory management systems, and user-friendly websites designed to boost sales and customer engagement.</p>
+									
+										</article>
+										<article>
+											<a href="#" class="image"><img src="{{ url_for('static', filename='images/healthcare.png') }}" alt="" /></a>
+											<h3 class="major">Healthcare</h3>
+											<p>Secure software solutions for patient management, telemedicine platforms, and healthcare websites that comply with industry regulations.</p>							
+									
+										</article>
+										<article>
+											<a href="#" class="image"><img src="{{ url_for('static', filename='images/banking.png') }}" alt="" /></a>
+											<h3 class="major">Banking & Finance</h3>
+											<p> Reliable, secure, and scalable solutions for online banking, payment gateways, and financial software systems.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="{{ url_for('static', filename='images/travel.png') }}" alt="" /></a>
+											<h3 class="major">Travel & Hospitality</h3>
+											<p> Intuitive travel booking platforms, hotel management systems, and websites that enhance the customer experience.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="{{ url_for('static', filename='images/education.png') }}" alt="" /></a>
+											<h3 class="major">Education</h3>
+											<p> Innovative e-learning platforms, student management systems, and websites tailored for educational institutions.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="{{ url_for('static', filename='images/logistic.png') }}" alt="" /></a>
+											<h3 class="major">Logistics</h3>
+											<p>Advanced logistics management systems, real-time tracking solutions, and streamlined inventory management.</p>
+										</article>
+										<!-- <article>
+											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+											<h3 class="major">Nisl placerat</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+											<a href="#" class="special">Learn more</a>
+										</article> -->
+									</section>
+								</section>
+
+								</div>
+							</div>
+
+					</section>
+<!-- Footer -->
+<section id="footer">
+	<div class="inner">
+		<h2 class="major">Get in touch</h2>
+		<p>
+			If you need any of our services, don’t hesitate to contact us today! At Maya Tech, we are committed to delivering exceptional solutions tailored to your business needs. Let us help you streamline your operations, enhance your digital presence, and achieve your goals with innovative technology solutions. Get in touch with us now and take the first step towards transforming your business!</p>
+			<form method="post" action="/send-email" id="contactForm">
+			<div class="fields">
+				<div class="field">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" />
+				</div>
+				<div class="field">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" />
+				</div>
+				<div class="field">
+					<label for="message">Message</label>
+					<textarea name="message" id="message" rows="4"></textarea>
+				</div>
+			</div>
+			<ul class="actions">
+				<li><input type="submit" value="Send Message" /></li>
+			</ul>
+		</form>
+		<br>
+		<p id="successMessage" class="hidden">Email sent successfully!</p>
+		<p id="errorMessage" class="hidden">Failed to send email. Please try again later.</p>
+		<section id="footercontact">
+		<ul class="contact">
+			<br>
+			<br>
+			<h2 class="major">Contact</h2>
+			<li class="icon solid fa-home">
+				Lideta Kifle Ketema<br />
+				PO Box 1234,<br />
+				Addis Ababa, Ethiopia<br />
+
+			</li>
+			<li class="icon solid fa-phone"> +251 911450185</li>
+			<li class="icon solid fa-envelope"><a href="#">info@maya-techs.com</a></li>
+			<!-- <li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
+			<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li> -->
+			<!-- <li class="icon brands fa-linkedin"><a href="#">instagram.com/untitled-tld</a></li> -->
+		</ul>
+		<ul class="copyright">
+			<li>&copy; Untitled Inc. All rights reserved.</li><li></a></li>
+		</ul>
+	</div>
+</section>
+</section>
+
+			</div>
+
+
+		<!-- Scripts -->
+		<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='assets/js/jquery.scrollex.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+		<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+		<script src="{{ url_for('static', filename='assets/js/successMessage.js') }}"></script>
+		
+
+	</body>
+</html>
