@@ -21,6 +21,10 @@ defusedxml==0.7.1
 executing==2.1.0
 fastjsonschema==2.21.1
 filelock==3.13.1
+Flask==3.0.2
+Flask-Cors==4.0.0
+Flask-Mail==0.10.0
+Flask-SQLAlchemy==3.1.1
 fonttools==4.55.3
 fqdn==1.5.1
 fsspec==2024.2.0
