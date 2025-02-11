@@ -25,8 +25,9 @@ def about():
 
 
 @app.route('/sitemap.xml')
-def index():
-    return render_template('sitemap.xml')
+def sitemap():
+    return send_from_directory('static', 'sitemap.xml', mimetype='application/xml')
+
 
 @app.route('/send-email', methods=['POST'])
 def send_email():
