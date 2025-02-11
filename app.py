@@ -1,6 +1,7 @@
 import os 
 from dotenv import load_dotenv
 from flask import Flask, render_template, request, redirect, url_for, jsonify
+from flask import Flask, send_from_directory
 from flask_mail import Mail, Message
 
 load_dotenv()
@@ -26,7 +27,8 @@ def about():
 
 @app.route('/sitemap.xml')
 def sitemap():
-    return send_from_directory('static', 'sitemap.xml', mimetype='application/xml')
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'sitemap.xml', mimetype='application/xml')
+
 
 
 @app.route('/send-email', methods=['POST'])
