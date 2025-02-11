@@ -23,6 +23,11 @@ def index():
 def about():
     return render_template('generic.html')
 
+
+@app.route('/sitemap.xml')
+def index():
+    return render_template('sitemap.xml')
+
 @app.route('/send-email', methods=['POST'])
 def send_email():
     name = request.form['name']
